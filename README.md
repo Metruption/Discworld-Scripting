@@ -1,0 +1,2 @@
+A place to store are share scripts I've created for use with the Discworld MUD located over at discworld.starturtle.net
+None of these scripts are meant to automate anything in a way that is against the rules of the MUD.
