@@ -11,7 +11,7 @@ It would say "Klawdees TPA" where TPA is said in a higher pitch than Klawdees
 I'll probably add support for it to also mention color changes of TPA, but as of writing this I don't know what those do so I'll save that for later. (Still haven't written any code yet despite telling people weeks ago that I'd make this.)
 
 Dependencies:
-This script uses Lua-eSpeak for talking purposes. You'll probably need that for this to work properly.
+This script uses Lua-eSpeak for talking purposes. You'll need that for this to work properly.
 http://lua-espeak.luaforge.net/
 
 Future features:
