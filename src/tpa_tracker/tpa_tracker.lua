@@ -9,8 +9,8 @@ require "espeak"
 --	direction contains a boolean
 --@postconditions:
 --	speaks aloud a soundtrigger following the human readable rules in readme.txt
-function tpa_declare(player,direction)
-	espeak.Synth(player,0,espeak.POS_CHARACTER)
+function tpa_declare(playername,direction)
+	espeak.Synth(playername,0,espeak.POS_CHARACTER)
 	if direction then
 		espeak.SetParameter(espeak.PITCH,60,false)
 	else
@@ -59,11 +59,15 @@ function executor(name, line)
 		return
 		--todo: make it log that it thinks there was a misfire on the direction
 		--			also include the line in the misfire log
-	name = parse_name(line)
-	if name == "rincewind"
+	playername = parse_name(line)
+	if playername == "rincewind"
 		return
 		--todo: make it log that it thinks there was a misfire on the name
 		--			also include the line in the misfire log
+	tpa_declare(playername,direction)
+	return
+	--todo: make it log when it thinks it has successfully fired
+	--		also include the line in the successful fire log
 
 
 --todo: code those things
