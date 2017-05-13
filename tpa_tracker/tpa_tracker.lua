@@ -1,5 +1,10 @@
 require "espeak"
 
+--I WILL NOT CODE THIS
+--NOT A BIG FAN OF lua
+--look forward to a python version
+--or maybe javascript if quow helps me....
+--fuck js
 
 --@params:
 --	player is the name of the person whose tpa speaker is about to talk abour
